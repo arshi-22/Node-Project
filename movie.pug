@@ -1,0 +1,9 @@
+extends layout
+
+block content
+
+    h1= movie.title
+    h5 Movie Type:- #{movie.type}
+    p #{movie.title} movie  is #{movie.body}.
+    hr  
+    a.btn.btn-dark(href='/movie/edit/'+movie_id) Edit

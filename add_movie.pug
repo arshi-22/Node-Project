@@ -1,0 +1,36 @@
+extends layout
+
+block content
+
+        style
+                include ./css/style.css
+
+        h1 #{title}
+        form(method = 'POST', action = '/movie/add')
+                #form-group
+                        label Title
+                        br
+                        input.from-control(name = "title",type='text')
+                br
+                #form-group
+                        label Type
+                        br
+                        input.from-control(name = "type",type='text')
+                br
+                #form-group
+                        label Body
+                        br
+                        textarea.from-control(name = "body")
+                br
+                br
+        
+                div.rating
+                        input(type="checkbox" name=star id="star1") 
+                        input(type="checkbox" name=star id="star2")
+                        input(type="checkbox" name=star id="star3")
+                        input(type="checkbox" name=star id="star4")
+                        input(type="checkbox" name=star id="star5")
+                        
+                hr
+                input.btn.btn-primary(type="submit",value="submit")
+                br

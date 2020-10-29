@@ -1,0 +1,9 @@
+extends layout
+
+block content
+        h1 WELCOME
+        h1 #{title}
+        ul
+                each movie, i in movies
+                        li.list-group-item
+                                a(href="/movie/"+movie._id)=movie.title
