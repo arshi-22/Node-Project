@@ -1,0 +1,28 @@
+@import "http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css";
+
+
+
+body{
+    background-color: rgb(148, 48, 48);
+    color: whitesmoke;
+}
+
+h1{
+    color: wheat;
+}
+.rating{
+    position: absolute;
+    top: 45%;
+    left: 15%;
+    transform: translate(-20%,-20%);
+    direction: ;
+
+}
+.rating input{
+    font-size: 40px;
+    color: #313131;
+    transition:0.3s all ;
+}
+.rating input:hover{
+    color: #f1c40f;
+}
